@@ -6,6 +6,7 @@
 <meta name="”Keywords”" content="教育,培训,英语,外语,背单词,托福,雅思,GRE,高考,SAT">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=&#39;http://www.w3.org/2000/svg&#39; width=&#39;128&#39; height=&#39;128&#39;%3E%3Cpath fill=&#39;%23003f8f&#39; d=&#39;M6 12h26v8H14v12h14v8H14v12h18v8H6zM36 12h8l18 48h-8z&#39;/%3E%3Cpath fill=&#39;%23003f8f&#39; d=&#39;M36 60h8l16-48h-8zM76 12h6L72 60h-6z&#39;/%3E%3Cpath fill=&#39;%23003f8f&#39; d=&#39;M76 12h6l10 48h-6z&#39;/%3E%3Cpath fill=&#39;%23003f8f&#39; d=&#39;M74 42h10v6H74zM96 12h6v48h-6zM116 12h6v48h-6z&#39;/%3E%3Cpath fill=&#39;%23003f8f&#39; d=&#39;M96 12h6l10 36h-6z&#39;/%3E%3Cpath fill=&#39;%23003f8f&#39; d=&#39;M116 12h6l-10 36h-6zM24 68h8v48h-8z&#39;/%3E%3Cpath fill=&#39;%23003f8f&#39; d=&#39;M24 68h8l-16 32H8zM8 100h28v8H8zM55 68h8v36c0 8 10 8 10 0V68h8v36c0 18-26 18-26 0zM112 82c0-18-26-18-26 0 0 16 18 10 18 21 0 8-10 8-10 0h-8c0 18 26 18 26 0 0-16-18-10-18-21 0-8 10-8 10 0z&#39;/%3E%3C/svg%3E" sizes="16x16 32x32 64x64 128x128" type="image/svg">
 <title>计划表</title>
+
 <style type="text/css">
 	a{text-decoration: none;color:#39f; }
 	body{width: 988px; margin: 0 auto;}
@@ -45,7 +46,6 @@
 		#sidebar{margin:5% 15% 0;}
 		#output{transform-origin: 0 0;}
 	}  
-
 	</style>
 <style id="style_js"></style>
 	
@@ -66,8 +66,6 @@
 <tr><td colspan="2">注3：列表中星号表示复习。按原书建议，上午学习新 list，下午或晚上复习打星的 list。背完或者复习完就可以划掉增加成就感。</td></tr>
 <tr><td colspan="2">注4：本页面可直接打印，打印时不会有侧边栏以及广告。打印界面更改目标打印机，可另存为 PDF 文件，更多设置里还可以去掉页眉页脚。实在没办法了就截图放到 Word 里打印。手机上的话建议直接截图保存。</td></tr>
 <tr><td colspan="2">注5：本工具建议使用 <a href="https://www.google.com/intl/zh-CN/chrome/browser/">谷歌浏览器</a> 访问。IE 10 以下版本不保证正常使用。 </td></tr>
-<tr><td colspan="2">注6：下方广告由Google提供，内容与本站无关。</td></tr>
-<tr><td colspan="2">注7：祝大家考试顺利！</td></tr>
 </tbody></table>
 <br>
 
@@ -76,18 +74,21 @@
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 </form>
-<h1>背古诗计划表</h1>
+
+<h1>计划表</h1>
 <div id="output">
-<span>Sun</span>
-<span>Mon</span>
-<span>Tue</span>
-<span>Wed</span>
-<span>Thu</span>
-<span>Fri</span>
-<span>Sat</span>
+	<span>Sun</span>
+	<span>Mon</span>
+	<span>Tue</span>
+	<span>Wed</span>
+	<span>Thu</span>
+	<span>Fri</span>
+	<span>Sat</span>
 <div id="calendar">
 </div>
+
 <script src="js/jquery.slim.min.js" type="text/javascript"></script>
+
 <script type="text/javascript">
 	$("#plan").val(localStorage.getItem("plan")||"背单词计划表");
 	$("#book").val(localStorage.getItem("book")||"L");
@@ -153,7 +154,6 @@
 			}
 
 			plan.push(str);
-
 		};
 		for (var i = 0,l=plan.length; i < l; i++) {
 			calendar.children().eq(weekday+i).append("<br>*"+book+" "+plan[reverse?l-i-1:i])
@@ -162,17 +162,16 @@
 			calendar.children().eq(weekday+i+7).append("<br>*"+book+" "+plan[reverse?l-i-1:i])
 			calendar.children().eq(weekday+i+14).append("<br>*"+book+" "+plan[reverse?l-i-1:i])
 			calendar.children().eq(weekday+i+29).append("<br>*"+book+" "+plan[reverse?l-i-1:i])
-			
 		};
 		if($(window).width()<480)$(document).scrollTop($("#sidebar").height())
 		return false;
 	}).click()
+  
 	if($(window).width()<480){
 		$("#style_js").html("@media screen and (max-device-width:480px){#output{width:497px;transform:scale("+$(window).width()/497+")}#output>span{width:70px;}#calendar>div{width:67px}")
-
 	}
 </script>
 
 
-<div data-lastpass-root="" style="position: absolute !important; top: 0px !important; left: 0px !important; height: 0px !important; width: 0px !important;"><div data-lastpass-infield="true" style="position: absolute !important; top: 0px !important; left: 0px !important;"><template shadowrootmode="open"><div style="position: absolute; height: 100vh; width: 100vw; z-index: 2147483647; border-radius: 4px; top: 0px; left: 0px; max-height: 0px; max-width: 280px; min-width: auto; margin-top: 10px;"><div style="left: -1px; display: none; position: absolute; overflow: hidden; bottom: 100%; width: 20px; height: 10px;"><div data-lastpass-infield-caret="true" style="position: absolute; width: 16px; height: 16px; border-radius: 2px; border-color: rgb(213, 217, 222); border-style: solid; border-width: 1px 0px 0px 1px; box-sizing: border-box; top: 4px; left: 2px; background: linear-gradient(0deg, rgb(255, 219, 219) 10.47%, rgb(251, 235, 235) 6.47%); transform: rotate(45deg);"></div></div><iframe data-lastpass-iframe="true" allow="clipboard-write" src="chrome-extension://hdokiejnpimakedhajhdlcegeplioahd/webclient-infield.html" style="border: none; height: 100%; width: 100%;"></iframe></div></template></div></div>
+
 </body></html>
